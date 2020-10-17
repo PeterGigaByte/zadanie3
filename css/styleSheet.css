@@ -38,11 +38,20 @@ span{
     background: red;
 }
 .left{
+    margin-right: 15px;
     position: relative;
     height: 100%;
     float: left;
     width: 25%;
     margin-top: 6px;
+    -webkit-box-shadow: 0 0 0 5px #A0A0A0,
+    inset 0 10px 27px -8px #141414,
+    inset 0 -10px 27px -8px #A31925,
+    1px 1px 21px 12px rgba(0,0,0,0);
+    box-shadow: 0 0 0 5px #A0A0A0,
+    inset 0 10px 27px -8px #141414,
+    inset 0 -10px 27px -8px #A31925,
+    1px 1px 21px 12px rgba(0,0,0,0);
 
 }
 .inline{
@@ -55,10 +64,12 @@ span{
     background-image: url("../images/bg464-2141757234.jpg");
     color: white;
     display: inline-block;
+
 }.center{
      float: left;
      width: 75%;
      margin-top: 6px;
+
  }
  button{
      position: relative;
@@ -75,7 +86,11 @@ span{
     .leftBlock{
         height: 100%;
 
-    }
+    }.left{
+    margin-bottom: 5px;
+         }.input[type=submit]{
+    margin-bottom: 15px;
+                   }
 }
 span[id="author"]{
     background: cyan;
@@ -88,7 +103,25 @@ span[id="author"]{
     background-color: gray;
     color: white;
     text-align: center;
-}.form-group[id="height_block"],.form-group[id="weight_block"]{
+}.form-group[id="height_block"],.form-group[id="weight_block"],
+ .form-group[id="project"]{
+     float: right;
     display: none;
- }
-
+ }.form-group[id="custom_value"]
+   ,.form-group[id="position"]
+   ,.form-group[id="scenes"]
+   ,.form-group[id="country"]
+   ,.form-group[id="custom_value2"]
+   ,.form-group[id="textarea-block"]{
+        float: right;
+       display: none;
+   }
+  .form-group[id=button]{
+      float: right;
+      margin-bottom: 15px;
+  }
+textarea{
+    color: black;
+    width: 100%;
+    height: 70px;
+}

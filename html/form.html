@@ -9,14 +9,14 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
     <link rel="stylesheet" href="../css/styleSheet.css">
-    <script src="../javascript/javascript.js"></script>
+
 </head>
 <body>
 
 <div class="container">
     <span class="heading">Osobné údaje</span>
     <br><br>
-    <form class="form-horizontal">
+    <form name="form_actors" class="form-horizontal" onsubmit="return validateForm()">
         <div class="left" >
             <div class="leftBlock">
                 <p>
@@ -28,33 +28,33 @@
             </div>
         </div>
         <div class="form-group center">
-            <label for="firstName" class="col-sm-3 control-label">Meno</label>
+            <label for="firstName" class="col-sm-3 control-label">Meno&nbsp;<span class="needed" >*</span></label>
             <div class="col-sm-9">
-                <input type="text" id="firstName" placeholder="Meno" class="form-control" >
+                <input type="text" name="firstName" id="firstName" placeholder="Meno"  class="form-control" required >
             </div>
         </div>
         <div class="form-group center">
             <label for="lastName" class="col-sm-3 control-label">Priezvisko&nbsp;<span class="needed" >*</span></label>
             <div class="col-sm-9">
-                <input type="text" id="lastName" placeholder="Priezvisko" class="form-control" >
+                <input type="text" name="lastName" id="lastName" placeholder="Priezvisko" class="form-control" required >
             </div>
         </div>
         <div class="form-group center">
             <label for="birthDate" class="col-sm-3 control-label">Dátum narodenia&nbsp;<span class="needed" >*</span></label>
             <div class="col-sm-9">
-                <input type="date" id="birthDate" class="form-control">
+                <input name="birthDate" max="2020-12-12" type="date" id="birthDate" class="form-control" required>
             </div>
         </div>
         <div class="form-group center">
             <label for="age" class="col-sm-3 control-label">Vek</label>
             <div class="col-sm-9">
-                <input type="number" id="age" placeholder="Vek" class="form-control" >
+                <input name="age" type="number" min="1" max="100" id="age" placeholder="Vek" class="form-control" >
             </div>
         </div>
         <div class="form-group center">
             <label for="email" class="col-sm-3 control-label">Email&nbsp;<span class="needed" >*</span></label>
             <div class="col-sm-9">
-                <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                <input type="email" id="email" placeholder="Email" class="form-control" name="email" required>
             </div>
         </div>
         <div class="form-group center">
@@ -103,7 +103,59 @@
                 <input type="number" id="weight" step=".01" placeholder="Hmotnosť" class="form-control" >
             </div>
         </div>
-        <div class="form-group center">
+        <div id="project" class="form-group center">
+            <label for="select_project" class="control-label col-sm-3">Bol si v minulosti súčasťou nejakého televízneho projektu?</label>
+            <div class="col-sm-9">
+                <select id="select_project" onchange="displaySelectValue()" class="form-control">
+                    <option>Vyber projekt</option>
+                </select>
+            </div>
+        </div>
+        <div id="custom_value" class="form-group center">
+            <label for="custom" class="col-sm-3 control-label">Vlastné&nbsp;</label>
+            <div class="col-sm-9">
+                <input type="text" id="custom" placeholder="Vlastné" class="form-control" >
+            </div>
+        </div>
+        <div id="position" class="form-group center">
+            <label for="select_position" class="control-label col-sm-3">Akú rolu ste mali v projekte?</label>
+            <div class="col-sm-9">
+                <select id="select_position" onchange="displaySelectValue2()" class="form-control">
+                    <option>Vyber rolu</option>
+                </select>
+            </div>
+        </div>
+        <div id="country" class="form-group center">
+            <label for="select_country" class="control-label col-sm-3">V akej krajine sa konal projekt?</label>
+            <div class="col-sm-9">
+                <select id="select_country" onchange="displaySelectValue3()" class="form-control">
+                    <option>Vyber krajinu</option>
+                </select>
+            </div>
+        </div>
+        <div id="custom_value2" class="form-group center">
+            <label for="custom2" class="col-sm-3 control-label">Vlastné&nbsp;</label>
+            <div class="col-sm-9">
+                <input type="text" id="custom2" placeholder="Vlastné" class="form-control" >
+            </div>
+        </div>
+        <div id="scenes" class="form-group center">
+            <label for="select_scenes" class="control-label col-sm-3">Ako často ste sa vyskytovali v scénkach?</label>
+            <div class="col-sm-9">
+                <select id="select_scenes"  class="form-control">
+                    <option>Vyber možnosť</option>
+                </select>
+            </div>
+        </div>
+        <div id="textarea-block" class="form-group center">
+            <label for="textarea" class="col-sm-3 control-label">Uveďte dôvod&nbsp;</label>
+            <div class="col-sm-9">
+                <textarea id="textarea" placeholder="Uveďte dôvod" name="textarea">
+
+                </textarea>
+            </div>
+        </div>
+        <div id="button" class="form-group center">
             <div class="col-sm-9 col-sm-offset-3">
                 <span class="help-block">*Povinné vyplniť</span>
                 <button type="submit" class="btn btn-primary btn-block center">Register</button>
@@ -115,6 +167,6 @@
 <footer class="footer">
     ©PeterRigoDevelopment
 </footer>
-
+<script src="../javascript/javascript.js"></script>
 </body>
 </html>

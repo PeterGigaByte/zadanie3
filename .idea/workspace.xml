@@ -22,12 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e398c0-1222-4160-90a6-2e88b73b0828" name="Default Changelist" comment="aeaw">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/javascript.js" afterDir="false" />
+    <list default="true" id="73e398c0-1222-4160-90a6-2e88b73b0828" name="Default Changelist" comment="beta">
+      <change afterPath="$PROJECT_DIR$/images/bg464-2141757234.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/blura6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sitemap-2488235_960_720.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styleSheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/javascript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +45,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ivMu2By0tQmhtAbYZgWFcJARvt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -72,7 +80,8 @@
       <updated>1602783830559</updated>
       <workItem from="1602783831582" duration="1606000" />
       <workItem from="1602840847450" duration="6054000" />
-      <workItem from="1602877590350" duration="11496000" />
+      <workItem from="1602877590350" duration="12825000" />
+      <workItem from="1602925184406" duration="17707000" />
     </task>
     <task id="LOCAL-00001" summary="aeaw">
       <created>1602845567300</created>
@@ -81,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602845567300</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="beta">
+      <created>1602889782376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602889782376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,10 +113,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="aeaw" />
-    <option name="LAST_COMMIT_MESSAGE" value="aeaw" />
+    <MESSAGE value="beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602840857616">
@@ -123,10 +142,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602845619463" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602879463922">
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602933303512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602879463922" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602933303512" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602880175445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
