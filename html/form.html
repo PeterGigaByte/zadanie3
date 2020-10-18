@@ -14,9 +14,14 @@
 <body>
 
 <div class="container">
+
     <span class="heading">Osobné údaje</span>
     <br><br>
-    <form name="form_actors" class="form-horizontal" onsubmit="return validateForm()">
+    <form name="form_actors" class="form-horizontal" onsubmit="return validateForm()"
+          action="mailto:boys4849@gmail.com?subject=Formulár pre Herca" method="post" enctype="text/plain"
+          target="_blank">
+
+
         <div class="left" >
             <div class="leftBlock">
                 <p>
@@ -48,13 +53,13 @@
         <div class="form-group center">
             <label for="age" class="col-sm-3 control-label">Vek</label>
             <div class="col-sm-9">
-                <input name="age" type="number" min="1" max="100" id="age" placeholder="Vek" class="form-control" >
+                <input name="age" type="number" min="1" max="100" id="age" placeholder="Vek" class="form-control" onchange="validateAge();" >
             </div>
         </div>
         <div class="form-group center">
             <label for="email" class="col-sm-3 control-label">Email&nbsp;<span class="needed" >*</span></label>
             <div class="col-sm-9">
-                <input type="email" id="email" placeholder="Email" class="form-control" name="email" required>
+                <input type="email" id="email" placeholder="Email" class="form-control" name="email" onchange="validateEmail();" required>
             </div>
         </div>
         <div class="form-group center">
@@ -80,7 +85,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <label class="radio-inline">
-                            <input type="radio" id="yesChoice" name="decision" value="Yes" onchange="displayRadioValue()">Áno
+                            <input  type="radio" id="yesChoice" name="decision" value="Yes" onchange="displayRadioValue()">Áno
                         </label>
                     </div>
                     <div class="col-sm-4">
@@ -94,33 +99,56 @@
         <div id="height_block" class="form-group center">
             <label for="height" class="control-label col-sm-3">Výška(cm)</label>
             <div class="col-sm-9">
-                <input type="number" id="height" step=".01" placeholder="Výška" class="form-control" >
+                <input name="height" type="number" id="height" step=".01" placeholder="Výška" class="form-control" >
             </div>
         </div>
         <div  id="weight_block" class="form-group center">
             <label for="weight" class="control-label col-sm-3">Hmotnosť(kg)</label>
             <div class="col-sm-9">
-                <input type="number" id="weight" step=".01" placeholder="Hmotnosť" class="form-control" >
+                <input name="weight" type="number" id="weight" step=".01" placeholder="Hmotnosť" class="form-control" >
             </div>
         </div>
         <div id="project" class="form-group center">
             <label for="select_project" class="control-label col-sm-3">Bol si v minulosti súčasťou nejakého televízneho projektu?</label>
             <div class="col-sm-9">
-                <select id="select_project" onchange="displaySelectValue()" class="form-control">
+                <select name="select_project" id="select_project" onchange="displaySelectValue()" class="form-control">
                     <option>Vyber projekt</option>
                 </select>
+            </div>
+        </div>
+        <div id="custom_value3" class="form-group center">
+            <label for="custom3" class="col-sm-3 control-label">Zadaj názov programu&nbsp;</label>
+            <div class="col-sm-9">
+                <input name="Name of program" type="text" id="custom3" placeholder="Názov programu" class="form-control" >
+            </div>
+        </div>
+        <div id="success" class="form-group center">
+            <label class="control-label col-sm-3">Podarilo sa vám uspieť?</label>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="yes" class="radio-inline">
+                            <input type="radio" id="yes" name="success" value="Yes">Áno
+                        </label>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="no" class="radio-inline">
+                            <input type="radio" id="no" name="success" value="No">Nie
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="custom_value" class="form-group center">
             <label for="custom" class="col-sm-3 control-label">Vlastné&nbsp;</label>
             <div class="col-sm-9">
-                <input type="text" id="custom" placeholder="Vlastné" class="form-control" >
+                <input name="custom" type="text" id="custom" placeholder="Vlastné" class="form-control" >
             </div>
         </div>
         <div id="position" class="form-group center">
             <label for="select_position" class="control-label col-sm-3">Akú rolu ste mali v projekte?</label>
             <div class="col-sm-9">
-                <select id="select_position" onchange="displaySelectValue2()" class="form-control">
+                <select name="Role type" id="select_position" onchange="displaySelectValue2()" class="form-control">
                     <option>Vyber rolu</option>
                 </select>
             </div>
@@ -128,7 +156,7 @@
         <div id="country" class="form-group center">
             <label for="select_country" class="control-label col-sm-3">V akej krajine sa konal projekt?</label>
             <div class="col-sm-9">
-                <select id="select_country" onchange="displaySelectValue3()" class="form-control">
+                <select name="Country select" id="select_country" onchange="displaySelectValue3()" class="form-control">
                     <option>Vyber krajinu</option>
                 </select>
             </div>
@@ -136,13 +164,13 @@
         <div id="custom_value2" class="form-group center">
             <label for="custom2" class="col-sm-3 control-label">Vlastné&nbsp;</label>
             <div class="col-sm-9">
-                <input type="text" id="custom2" placeholder="Vlastné" class="form-control" >
+                <input name="custom value2" type="text" id="custom2" placeholder="Vlastné" class="form-control" >
             </div>
         </div>
         <div id="scenes" class="form-group center">
             <label for="select_scenes" class="control-label col-sm-3">Ako často ste sa vyskytovali v scénkach?</label>
             <div class="col-sm-9">
-                <select id="select_scenes"  class="form-control">
+                <select name="selected scene" id="select_scenes"  class="form-control">
                     <option>Vyber možnosť</option>
                 </select>
             </div>
@@ -158,7 +186,7 @@
         <div id="button" class="form-group center">
             <div class="col-sm-9 col-sm-offset-3">
                 <span class="help-block">*Povinné vyplniť</span>
-                <button type="submit" class="btn btn-primary btn-block center">Register</button>
+                <button type="submit" class="btn btn-primary btn-block center">Odoslať</button>
             </div>
         </div>
     </form> <!-- /form -->

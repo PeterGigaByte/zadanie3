@@ -22,10 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e398c0-1222-4160-90a6-2e88b73b0828" name="Default Changelist" comment="beta">
-      <change afterPath="$PROJECT_DIR$/images/bg464-2141757234.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/blura6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sitemap-2488235_960_720.png" afterDir="false" />
+    <list default="true" id="73e398c0-1222-4160-90a6-2e88b73b0828" name="Default Changelist" comment="beta 0.1">
+      <change afterPath="$PROJECT_DIR$/Stažené soubory – zástupce.lnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styleSheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/form.html" afterDir="false" />
@@ -81,7 +79,12 @@
       <workItem from="1602783831582" duration="1606000" />
       <workItem from="1602840847450" duration="6054000" />
       <workItem from="1602877590350" duration="12825000" />
-      <workItem from="1602925184406" duration="17707000" />
+      <workItem from="1602925184406" duration="23287000" />
+      <workItem from="1602952153053" duration="6003000" />
+      <workItem from="1602960336760" duration="203000" />
+      <workItem from="1602962854535" duration="723000" />
+      <workItem from="1602963703535" duration="455000" />
+      <workItem from="1602964582740" duration="3046000" />
     </task>
     <task id="LOCAL-00001" summary="aeaw">
       <created>1602845567300</created>
@@ -97,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602889782376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="beta 0.1">
+      <created>1602944831876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602944831876</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,13 +129,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="aeaw" />
     <MESSAGE value="beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta" />
+    <MESSAGE value="beta 0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta 0.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602840857616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602840857616" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1602963130325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602963130325" />
     <state x="742" y="386" key="Github.CreatePullRequestDialog" timestamp="1602845496770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -142,10 +157,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602845619463" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602933303512">
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602944819589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602933303512" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602944819589" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602880175445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
