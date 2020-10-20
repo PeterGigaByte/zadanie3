@@ -22,10 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e398c0-1222-4160-90a6-2e88b73b0828" name="Default Changelist" comment="beta 0.1">
-      <change afterPath="$PROJECT_DIR$/Stažené soubory – zástupce.lnk" afterDir="false" />
+    <list default="true" id="73e398c0-1222-4160-90a6-2e88b73b0828" name="Default Changelist" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styleSheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/javascript.js" afterDir="false" />
     </list>
@@ -85,6 +83,9 @@
       <workItem from="1602962854535" duration="723000" />
       <workItem from="1602963703535" duration="455000" />
       <workItem from="1602964582740" duration="3046000" />
+      <workItem from="1603030297123" duration="1531000" />
+      <workItem from="1603094208219" duration="4563000" />
+      <workItem from="1603109158606" duration="1800000" />
     </task>
     <task id="LOCAL-00001" summary="aeaw">
       <created>1602845567300</created>
@@ -107,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602944831876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final">
+      <created>1603030333503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603030333503</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +138,8 @@
     <MESSAGE value="aeaw" />
     <MESSAGE value="beta" />
     <MESSAGE value="beta 0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta 0.1" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602840857616">
@@ -153,10 +162,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602845431345" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602845619463">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603030340490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602845619463" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603030340490" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602944819589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

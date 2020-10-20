@@ -101,10 +101,9 @@ function validateForm(){
         return false;
     }
 
-
-    validateAge();
-    validateEmail();
-
+    if(validateAge() !== true || validateEmail()!== true){
+        return false
+    }
 
 
 }
@@ -128,6 +127,7 @@ function validateEmail(){
             alert("Domény musia obsahovať aspoň 2 znaky a max 4.");
             return false;}
     }
+    return true;
 }
 
 function validateAge(){
@@ -153,6 +153,7 @@ function validateAge(){
         alert("Zlý vek\n"+"\n"+"Poďla narodenia "+ageMy+"\n"+"Podľa vstupu "+age);
         return false;
     }
+    return true;
 }
 
 let select = document.getElementById("select_project");
