@@ -1,5 +1,5 @@
 
-function displayRadioValue() {
+function displayRadioValue() { //ahoj
 
         const ele = document.getElementsByName('decision');
         document.getElementById("success").style.display = 'none';
