@@ -118,15 +118,18 @@ function validateEmail(){
 
     const dom = x.split(".");
     let domLength = dom.length;
-    if(dom.length<3){
+    if(dom.length<2){
         alert("Musia byť aspoň dve domény.");
         return false;
     }
-    for (let i = 1; i < domLength;i++) {
+    if(dom[domLength-1].length > 4 || dom[domLength-1].length < 2){
+        alert("Vrcholová doména musí obsahovať aspoň 2 znaky a max 4.");
+        return false;}
+    /*for (let i = 1; i < domLength;i++) {
         if(dom[i].length < 2||dom[i].length > 4){
             alert("Domény musia obsahovať aspoň 2 znaky a max 4.");
             return false;}
-    }
+    }*/
     return true;
 }
 
