@@ -2,6 +2,12 @@ body{
     background-image: url("../images/background.jpg");
     min-width: 309px;
 }
+.icons{
+    background: none;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
 .heading{
     position: relative;
     color: white;
@@ -11,9 +17,10 @@ span{
     color: red;
 }
 .container {
-
+    margin-top: 20px;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .form-control{
@@ -54,6 +61,7 @@ span{
     1px 1px 21px 12px rgba(0,0,0,0);
 
 }
+
 .inline{
     display: inline;
 }
@@ -61,7 +69,7 @@ span{
     height: 500px;
     width: 100%;
     text-align: center;
-    background-image: url("../images/bg464-2141757234.jpg");
+    background-image: url("../images/background2.jpg");
     color: white;
     display: inline-block;
 
@@ -104,7 +112,8 @@ span{
          , .form-group[id="project"]
          ,.form-group[id="button"]
          ,.form-group[id="custom_value3"]
-         ,.form-group[id="success"]{
+         ,.form-group[id="success"]
+         ,.form-group[id="checkboxes"]{
     position: relative;
          left: -30px;
      }
@@ -133,7 +142,8 @@ span[id="author"]{
    ,.form-group[id="custom_value2"]
    ,.form-group[id="textarea-block"]
    ,.form-group[id="custom_value3"]
-    ,.form-group[id="success"]{
+    ,.form-group[id="success"]
+   ,.form-group[id="checkboxes"]{
         position: relative;
         right: 14px;
         float: right;

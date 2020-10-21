@@ -12,7 +12,8 @@ function displayRadioValue() { //ahoj
         document.getElementById('position').style.display = 'none';
         document.getElementById('textarea-block').style.display = "none";
         document.getElementById('custom_value3').style.display = "none";
-         document.getElementById('custom_value2').style.display = 'none';
+        document.getElementById('custom_value2').style.display = 'none';
+        document.getElementById('checkboxes').style.display = "none";
         for(let i = 0; i < ele.length; i++) {
             if(ele[i].checked){
                 if(ele[i].value === 'Yes'){
@@ -35,6 +36,7 @@ function displaySelectValue() {
     document.getElementById('scenes').style.display = 'none';
     document.getElementById('country').style.display = 'none';
     document.getElementById('custom_value2').style.display = 'none';
+    document.getElementById('checkboxes').style.display = "none";
     if(ele==='Komparz'){
         document.getElementById('custom_value3').style.display = "inline";
     }if(ele==='Filmový herec'){
@@ -58,11 +60,14 @@ function displaySelectValue2() {
     document.getElementById('country').style.display = 'none';
     document.getElementById('scenes').style.display = 'none';
     document.getElementById('custom_value2').style.display = 'none';
+    document.getElementById('checkboxes').style.display = "none";
     if(ele==="Hlavná rola"){
         document.getElementById('country').style.display = 'inline';
+        document.getElementById('checkboxes').style.display = "inline";
 
     }if(ele==="Veďlajšia rola"){
         document.getElementById('scenes').style.display = 'inline';
+        document.getElementById('checkboxes').style.display = "inline";
     }
 }
 function displaySelectValue3() {
@@ -152,7 +157,7 @@ function validateAge(){
             ageMy= ageMy-1;
         }
     }
-    if(ageMy!=age){
+    if(ageMy!==Number(age)){
         alert("Zlý vek\n"+"\n"+"Poďla narodenia "+ageMy+"\n"+"Podľa vstupu "+age);
         return false;
     }

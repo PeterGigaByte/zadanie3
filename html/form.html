@@ -8,19 +8,19 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
     <link rel="stylesheet" href="../css/styleSheet.css">
+    <link rel="icon" href="../images/icon.png">
 
 </head>
 <body>
 
 <div class="container">
-
     <span class="heading">Osobné údaje</span>
     <br><br>
     <form name="form_actors" class="form-horizontal"
           action="mailto:boys4849@gmail.com?subject=Formulár_pre_Herca" method="post" enctype="text/plain"
           target="_blank" onsubmit="return validateForm()">
 
-
+    <main>
         <div class="left" >
             <div class="leftBlock">
                 <p>
@@ -31,6 +31,7 @@
                 </p>
             </div>
         </div>
+        <img src="../images/one.png" class="icons" alt="one">
         <div class="form-group center">
             <label for="firstName" class="col-sm-3 control-label">Meno&nbsp;<span class="needed" >*</span></label>
             <div class="col-sm-9">
@@ -78,116 +79,172 @@
                 </div>
             </div>
         </div> <!-- /.form-group -->
-        <div class="form-group center">
-            <label class="control-label col-sm-3">Chceš sa naozaj stať hercom?</label>
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label class="radio-inline">
-                            <input  type="radio" id="yesChoice" name="decision" value="Yes" onchange="displayRadioValue()">Áno
-                        </label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label class="radio-inline">
-                            <input type="radio" id="noChoice" name="decision" value="No" onchange="displayRadioValue()">Nie
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="height_block" class="form-group center">
-            <label for="height" class="control-label col-sm-3">Výška(cm)</label>
-            <div class="col-sm-9">
-                <input name="height" type="number" id="height" step=".01" placeholder="Výška" class="form-control" >
-            </div>
-        </div>
-        <div  id="weight_block" class="form-group center">
-            <label for="weight" class="control-label col-sm-3">Hmotnosť(kg)</label>
-            <div class="col-sm-9">
-                <input name="weight" type="number" id="weight" step=".01" placeholder="Hmotnosť" class="form-control" >
-            </div>
-        </div>
-        <div id="project" class="form-group center">
-            <label for="select_project" class="control-label col-sm-3">Bol si v minulosti súčasťou nejakého televízneho projektu?</label>
-            <div class="col-sm-9">
-                <select name="select_project" id="select_project" onchange="displaySelectValue()" class="form-control">
-                    <option>Vyber projekt</option>
-                </select>
-            </div>
-        </div>
-        <div id="custom_value3" class="form-group center">
-            <label for="custom3" class="col-sm-3 control-label">Zadaj názov programu&nbsp;</label>
-            <div class="col-sm-9">
-                <input name="Name of program" type="text" id="custom3" placeholder="Názov programu" class="form-control" >
-            </div>
-        </div>
-        <div id="success" class="form-group center">
-            <label class="control-label col-sm-3">Podarilo sa vám uspieť?</label>
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="yes" class="radio-inline">
-                            <input type="radio" id="yes" name="success" value="Yes">Áno
-                        </label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label for="no" class="radio-inline">
-                            <input type="radio" id="no" name="success" value="No">Nie
-                        </label>
+    </main>
+        <img src="../images/two.png" class="icons" alt="two">
+            <div class="form-group center">
+                <label class="control-label col-sm-3">Chceš sa naozaj stať hercom?</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input  type="radio" id="yesChoice" name="decision" value="Yes" onchange="displayRadioValue()">Áno
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input type="radio" id="noChoice" name="decision" value="No" onchange="displayRadioValue()">Nie
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="custom_value" class="form-group center">
-            <label for="custom" class="col-sm-3 control-label">Vlastné&nbsp;</label>
-            <div class="col-sm-9">
-                <input name="custom" type="text" id="custom" placeholder="Vlastné" class="form-control" >
+            <div id="height_block" class="form-group center">
+                <label for="height" class="control-label col-sm-3">Výška(cm)</label>
+                <div class="col-sm-9">
+                    <input name="height" type="number" id="height" step=".01" placeholder="Výška" class="form-control" >
+                </div>
             </div>
-        </div>
-        <div id="position" class="form-group center">
-            <label for="select_position" class="control-label col-sm-3">Akú rolu ste mali v projekte?</label>
-            <div class="col-sm-9">
-                <select name="Role type" id="select_position" onchange="displaySelectValue2()" class="form-control">
-                    <option>Vyber rolu</option>
-                </select>
+            <div  id="weight_block" class="form-group center">
+                <label for="weight" class="control-label col-sm-3">Hmotnosť(kg)</label>
+                <div class="col-sm-9">
+                    <input name="weight" type="number" id="weight" step=".01" placeholder="Hmotnosť" class="form-control" >
+                </div>
             </div>
-        </div>
-        <div id="country" class="form-group center">
-            <label for="select_country" class="control-label col-sm-3">V akej krajine sa konal projekt?</label>
-            <div class="col-sm-9">
-                <select name="Country select" id="select_country" onchange="displaySelectValue3()" class="form-control">
-                    <option>Vyber krajinu</option>
-                </select>
+            <div id="project" class="form-group center">
+                <label for="select_project" class="control-label col-sm-3">Bol si v minulosti súčasťou nejakého televízneho projektu?</label>
+                <div class="col-sm-9">
+                    <select name="select_project" id="select_project" onchange="displaySelectValue()" class="form-control">
+                        <option>Vyber projekt</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div id="custom_value2" class="form-group center">
-            <label for="custom2" class="col-sm-3 control-label">Vlastné&nbsp;</label>
-            <div class="col-sm-9">
-                <input name="custom value2" type="text" id="custom2" placeholder="Vlastné" class="form-control" >
+            <div id="custom_value3" class="form-group center">
+                <label for="custom3" class="col-sm-3 control-label">Zadaj názov programu&nbsp;</label>
+                <div class="col-sm-9">
+                    <input name="Name of program" type="text" id="custom3" placeholder="Názov programu" class="form-control" >
+                </div>
             </div>
-        </div>
-        <div id="scenes" class="form-group center">
-            <label for="select_scenes" class="control-label col-sm-3">Ako často ste sa vyskytovali v scénkach?</label>
-            <div class="col-sm-9">
-                <select name="selected scene" id="select_scenes"  class="form-control">
-                    <option>Vyber možnosť</option>
-                </select>
+            <div id="success" class="form-group center">
+                <label class="control-label col-sm-3">Podarilo sa vám uspieť?</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="yes" class="radio-inline">
+                                <input type="radio" id="yes" name="success" value="Yes">Áno
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="no" class="radio-inline">
+                                <input type="radio" id="no" name="success" value="No">Nie
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="textarea-block" class="form-group center">
-            <label for="textarea" class="col-sm-3 control-label">Uveďte dôvod&nbsp;</label>
-            <div class="col-sm-9">
-                <textarea id="textarea" placeholder="Uveďte dôvod" name="textarea">
+            <div id="custom_value" class="form-group center">
+                <label for="custom" class="col-sm-3 control-label">Vlastné&nbsp;</label>
+                <div class="col-sm-9">
+                    <input name="custom" type="text" id="custom" placeholder="Vlastné" class="form-control" >
+                </div>
+            </div>
+            <div id="position" class="form-group center">
+                <label for="select_position" class="control-label col-sm-3">Akú rolu ste mali v projekte?</label>
+                <div class="col-sm-9">
+                    <select name="Role type" id="select_position" onchange="displaySelectValue2()" class="form-control">
+                        <option>Vyber rolu</option>
+                    </select>
+                </div>
+            </div>
+            <div id="country" class="form-group center">
+                <label for="select_country" class="control-label col-sm-3">V akej krajine sa konal projekt?</label>
+                <div class="col-sm-9">
+                    <select name="Country select" id="select_country" onchange="displaySelectValue3()" class="form-control">
+                        <option>Vyber krajinu</option>
+                    </select>
+                </div>
+            </div>
+            <div id="custom_value2" class="form-group center">
+                <label for="custom2" class="col-sm-3 control-label">Vlastné&nbsp;</label>
+                <div class="col-sm-9">
+                    <input name="custom value2" type="text" id="custom2" placeholder="Vlastné" class="form-control" >
+                </div>
+            </div>
+            <div id="scenes" class="form-group center">
+                <label for="select_scenes" class="control-label col-sm-3">Ako často ste sa vyskytovali v scénkach?</label>
+                <div class="col-sm-9">
+                    <select name="selected scene" id="select_scenes"  class="form-control">
+                        <option>Vyber možnosť</option>
+                    </select>
+                </div>
+            </div>
 
-                </textarea>
+            <div id="checkboxes" class="form-group center">
+                <label class="control-label col-sm-3">V akej krajine by ste si chceli zahrať?
+                (v budúcnosti)</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="Slovensko" class="radio-inline">
+                                <input type="checkbox" id="Slovensko" name="Slovensko" value="Slovensko">Slovensko
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Česko" class="radio-inline">
+                                <input type="checkbox" id="Česko" name="Česko" value="Česko">Česko
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Rakúsko" class="radio-inline">
+                                <input type="checkbox" id="Rakúsko" name="Rakúsko" value="Rakúsko">Rakúsko
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Maďarsko" class="radio-inline">
+                                <input type="checkbox" id="Maďarsko" name="Maďarsko" value="Maďarsko">Maďarsko
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Amerika" class="radio-inline">
+                                <input type="checkbox" id="Amerika" name="Amerika" value="Amerika">Amerika
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Čína" class="radio-inline">
+                                <input type="checkbox" id="Čína" name="Čína" value="Čína">Čína
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Francúzko" class="radio-inline">
+                                <input type="checkbox" id="Francúzko" name="Francúzko" value="Francúzko">Francúzko
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Anglicko" class="radio-inline">
+                                <input type="checkbox" id="Anglicko" name="Anglicko" value="Anglicko">Anglicko
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="Nemecko" class="radio-inline">
+                                <input type="checkbox" id="Nemecko" name="Nemecko" value="Nemecko">Nemecko
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="button" class="form-group center">
-            <div class="col-sm-9 col-sm-offset-3">
-                <span class="help-block">* Povinné vyplniť</span>
-                <button type="submit" value="Submit" class="btn btn-primary btn-block center">Odoslať</button>
+            <div id="textarea-block" class="form-group center">
+                <label for="textarea" class="col-sm-3 control-label">Uveďte dôvod&nbsp;</label>
+                <div class="col-sm-9">
+                    <textarea id="textarea" placeholder="Uveďte dôvod" name="textarea">
+
+                    </textarea>
+                </div>
             </div>
-        </div>
+            <div id="button" class="form-group center">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block">* Povinné vyplniť</span>
+                    <button type="submit" value="Submit" class="btn btn-primary btn-block center">Odoslať</button>
+                </div>
+            </div>
     </form> <!-- /form -->
 
 </div>
